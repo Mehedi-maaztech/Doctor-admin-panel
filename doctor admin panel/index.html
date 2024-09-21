@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon-192x192.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./resources/style/style.css">
+    <title>home - chevrone admin</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 ">
+                    <div class="logo">
+                        <img class="img-fluid py-3" src="./resources/images/favicon-192x192.png" style=" width: 40px; filter: drop-shadow(1px 0px 0px #fff) !important;">
+                    </div>
+                </div>
+                <div class="col-5 d-none">
+                        <form class="  bg-light border-warning my-4 d-flex align-items-center">
+                          <i class="bi bi-search" ></i>
+                          <input class=" mr-sm-2 bg-transparent" type="search" placeholder="Search your topic...">
+                        </form>
+                </div>
+                <div class="col-6  d-flex justify-content-end align-items-center">
+                   <div class="profile-logo p-1"> <img class="img-fluid" src="./resources/images/favicon-192x192.png"></div>
+                   
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="row w-100 m-0">
+        <div class="left-nav pt-3 position-relative " style="min-height: 100%;" id="left-nav">
+            <section class="hamburger" id="hamburger">
+                <div class="ham-container py-2">
+                    <div class="top pb-4">
+                        <div class="image m-auto" id="menu-image">
+                            <img src="./resources/images/images.jpg" alt="doctor.img" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="bottom py-3 w-100 position-relative">
+                        <ul>
+                            <li><a href="index.html" class="active"><i class="bi bi-speedometer2"></i><span class="menu-opt">Dashboard</span></a></li>
+                            <li><a href="adddoctor.html" class=""><i class="bi bi-person-fill"></i><span class="menu-opt">Add Doctors</span></a></li>
+                            <li><a href="adddoctorslist.html" class=""><i class="bi bi-hdd-rack-fill"></i><span class="menu-opt">Doctors list</span></a></li>
+                            <li><a href="addservicemenu.html" class=""><i class="bi bi-cash-coin"></i><span class="menu-opt">Add Service Menu</span></a></li>
+                            <li><a href="addservices.html" class=""><i class="bi bi-person-fill-add"></i><span class="menu-opt">Add services</span></a></li>
+                            <li><a href="employee.html" class=""><i class="bi bi-person-raised-hand"></i><span class="menu-opt">Employees</span></a></li>
+                            <li><a href="editwebpages.html" class=""><i class="bi bi-credit-card-2-front-fill"></i><span class="menu-opt">Edit Web Pages</span></a></li>
+                            <li><a href="editprofile.html" class=""><i class="bi bi-pencil-square"></i><span class="menu-opt">Edit Profile</span></a></li>
+                            <li><a href="settings.html" class=""><i class="bi bi-gear-fill"></i><span class="menu-opt">Settings</span></a></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="toggle-btn"></div>
+            </section>
+            <footer class="nav-footer position-absolute" style="top: auto; bottom: 0;
+            right: 0; left: 0;">
+                    <ul>
+                        <li><a href="#" class=""><i class="bi bi-box-arrow-right"></i><span class="menu-opt">Logout</span></a></li>
+                    </ul>
+            </footer>
+        </div>
+        <div class="right-content bg-white position-relative pl-3" id="right-content">
+            <a class="toggle-button btn position-absolute border border-secondary" type="button" onclick="toggle()"><i class="bi bi-list h2"></i></a>
+            <div class="content">
+                <div class="right-content-header pt-4">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <div class="welcome" >
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 welcome-image ">
+                                                <div class="welcome-detail">
+                                                        <p class=" pt-4 m-0" >January 5, 2024</p>
+                                                        <h2 class=" mb-0">Welcome back! Jhon.</h2>
+                                                        <p>Learning is a journey, so start it.</p>
+                                                        <h2 style="font-family: 'Bungee Spice', sans-serif; font-size: 45px;">12:40</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summariesed-menu">
+                    <div class="container ">
+                        <div class="row justify-content-sm-center">
+                            <div class="col-lg-8 col-md-6 col-sm-12 col-12 pb-4 px-0">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <span class="col-12 my-3 py-2" style="font-weight: bold; font-size: 22px; color: rgba(0, 0, 0, 0.5)"><i class="bi bi-speedometer2 mr-2"></i> Dashboard</span>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-person-fill-add"></i></div>
+                                                    <div class="card-info"><span>Add Doctors</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #476072, #EEEEEE);"></div>
+                                                    <div class="card-layer"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-person-lines-fill"></i></div>
+                                                    <div class="card-info"><span>Doctors List</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #0E8388, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-list-columns-reverse"></i></div>
+                                                    <div class="card-info"><span>Add Service</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #548CA8, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-person-raised-hand"></i></div>
+                                                    <div class="card-info"><span>Employees</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #512B81, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-credit-card-2-front-fill"></i></div>
+                                                    <div class="card-info"><span>Edit Web Page</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #AE445A, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-credit-card-2-front-fill"></i></div>
+                                                    <div class="card-info"><span>Edit Web Page</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #739072, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-pencil-square"></i></div>
+                                                    <div class="card-info"><span>Edit Profile</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #F0CAA3, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12 p-0 pb-lg-4 pb-md-3 pb-sm-2 pb-5">
+                                            <div class="card m-auto">
+                                                <div class="card-body position-relative">
+                                                    <div class="card-icon mt-2"><i class="bi bi-gear-fill"></i></div>
+                                                    <div class="card-info"><span>Settings</span></div>
+                                                    <div class="card-deg" style="background-image: linear-gradient(135deg, #3C2A21, #EEEEEE);"></div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <span class="col-12 my-3 py-2" style="font-weight: bold; font-size: 22px; color: rgba(0, 0, 0, 0.5)">My Assigment</span>
+                                        <div class="col-12">
+                                            <div class="assigment-card">
+                                              <div class="card-body py-0 d-flex justify-content-between align-items-center">
+                                                <div class="assigment-info">
+                                                    <h2 class="p-0 m-0">Biology</h2>
+                                                    <p>Date:February 12th,2024 10:40 am</p>
+                                                </div>
+                                                <div class="assigment-link pb-3">
+                                                    <a class="btn btn-info rounded-pill px-3 py-0">Check details</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="assigment-card" style=" border-left-color: rgb(202, 51, 207);">
+                                              <div class="card-body py-0 d-flex justify-content-between align-items-center">
+                                                <div class="assigment-info">
+                                                    <h2 class="p-0 m-0">Biology</h2>
+                                                    <p>Date:February 12th,2024 10:40 am</p>
+                                                </div>
+                                                <div class="assigment-link pb-3">
+                                                    <a class="btn btn-info rounded-pill px-3 py-0">Check details</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="assigment-card" style=" border-left-color: rgb(131, 127, 255);">
+                                              <div class="card-body py-0 d-flex justify-content-between align-items-center">
+                                                <div class="assigment-info">
+                                                    <h2 class="p-0 m-0">Biology</h2>
+                                                    <p>Date:February 12th,2024 10:40 am</p>
+                                                </div>
+                                                <div class="assigment-link pb-3">
+                                                    <a class="btn btn-info rounded-pill px-3 py-0">Check details</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-4 pb-4" style="border-radius: 10px; background-color: #e7e4e4;"> 
+                                <h1 class="text-light pt-3 pb-2 font-weight-bold text-sm-center text-md-left text-left" style="border-bottom:1px solid #548CA8;font-size: 30px; color:rgba(0, 0, 0, 0.4) !important;">New Doctors Event</h1>
+                                <div class="card recent-event m-auto my-3 mb-lg-3 mb-md-3 mb-sm-2 mb-4 position-relative" style="width:22rem;  background-image: linear-gradient(to bottom, #86B6F6, #334257);">
+                                    <div class="card-body">
+                                        <div class="recent-event-body-details">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="new-doctors-image">
+                                                    <img class="img-fluid" src="./resources/images/DrMuizzul.jpg">
+                                                </div>
+                                                <h3 class="text-white "><i class="bi bi-three-dots-vertical"></i></h3>
+                                            </div>
+                                            <h4 class="pt-2 text-light font-weight-bold" style="font-size: 20px;"> Dr. Muizzul</h4>
+                                            <small style="color: lightgray;">Added: january 2,2024 12:40</small>
+                                        </div>
+                                        <div class="recent-event-body" style=" background-image: linear-gradient(135deg, #f9fdf8ca, #87877322);"></div>
+                                    </div>
+                                </div>
+                                <div class="card recent-event m-auto my-3 mb-lg-3 mb-md-3 mb-sm-2 mb-4" style="width:22rem;
+                                background-image: linear-gradient(to bottom, #334257, #4F6F52);">
+                                    <div class="card-body">
+                                        <div class="recent-event-body-details">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="new-doctors-image">
+                                                    <img class="img-fluid" src="./resources/images/DrMuizzul.jpg">
+                                                </div>
+                                                <h3 class="text-white"><i class="bi bi-three-dots-vertical"></i></h3>
+                                            </div>
+                                            <h4 class="pt-2 text-light font-weight-bold" style="font-size: 20px;"> Dr. Muizzul</h4>
+                                            <small style="color: lightgray;">Added: january 2,2024 12:40</small>
+                                        </div>
+                                        <div class="recent-event-body" style=" background-image: linear-gradient(135deg, #f9fdf8ca, #86b7f602);"></div>
+                                    </div>
+                                </div>
+                                <div class="card recent-event m-auto my-3 mb-lg-3 mb-md-3 mb-sm-2 mb-4" style="width:22rem;background-image: linear-gradient(to bottom, #43766C, #607274);">
+                                    <div class="card-body">
+                                        <div class="recent-event-body-details">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="new-doctors-image">
+                                                    <img class="img-fluid" src="./resources/images/DrMuizzul.jpg">
+                                                </div>
+                                                <h3 class="text-white "><i class="bi bi-three-dots-vertical"></i></h3>
+                                            </div>
+                                            <h4 class="pt-2 text-light font-weight-bold" style="font-size: 20px;"> Dr. Muizzul</h4>
+                                            <small style="color: lightgray;">Added: january 2,2024 12:40</small>
+                                        </div>
+                                        <div class="recent-event-body" style=" background-image: linear-gradient(135deg, #f9fdf8ca, #77770820);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <footer class="py-2 position-absolute px-2 d-flex justify-content-between" style="background-color: #41414B; top: auto; bottom: 0;
+            right: 0; left: 0; color: white;">
+               <span class="text-muted">Developed by DRMcoders</span>
+               <span class="version text-muted">version 8.0.1</span>
+            </footer>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+</body>
+</html>

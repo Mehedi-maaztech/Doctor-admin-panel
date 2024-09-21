@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon-192x192.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./resources/style/employee.css">
+    <title>Home - Employee</title>
+    <link rel="stylesheet" href="./resources/style/employee.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+          <div class="row">
+              <div class="col-6 ">
+                  <div class="logo">
+                      <img class="img-fluid py-3" src="./resources/images/favicon-192x192.png" style=" width: 40px; filter: drop-shadow(1px 0px 0px #fff) !important;">
+                  </div>
+              </div>
+              <div class="col-5 d-none">
+                      <form class="  bg-light border-warning my-4 d-flex align-items-center">
+                        <i class="bi bi-search" ></i>
+                        <input class=" mr-sm-2 bg-transparent" type="search" placeholder="Search your topic...">
+                      </form>
+              </div>
+              <div class="col-6  d-flex justify-content-end align-items-center">
+                 <div class="profile-logo p-1"> <img class="img-fluid" src="./resources/images/favicon-192x192.png"></div>
+                 
+              </div>
+          </div>
+      </div>
+    </header>
+    <main class="row w-100 m-0">
+        <div class="left-nav pt-3 position-relative " style="min-height: 100%;" id="left-nav">
+            <section class="hamburger" id="hamburger">
+                <div class="ham-container py-2">
+                    <div class="top pb-4">
+                        <div class="image m-auto" id="menu-image">
+                            <img src="./resources/images/images.jpg" alt="doctor.img" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="bottom py-3 w-100 position-relative">
+                      <ul>
+                        <li><a href="index.html" class=""><i class="bi bi-speedometer2"></i><span class="menu-opt">Dashboard</span></a></li>
+                        <li><a href="adddoctor.html" class=""><i class="bi bi-person-fill"></i><span class="menu-opt">Add Doctors</span></a></li>
+                        <li><a href="adddoctorslist.html" class=""><i class="bi bi-hdd-rack-fill"></i><span class="menu-opt">Doctors list</span></a></li>
+                        <li><a href="addservicemenu.html" class=""><i class="bi bi-cash-coin"></i><span class="menu-opt">Add Service Menu</span></a></li>
+                        <li><a href="addservices.html" class=""><i class="bi bi-person-fill-add"></i><span class="menu-opt">Add services</span></a></li>
+                        <li><a href="employee.html" class="active"><i class="bi bi-person-raised-hand"></i><span class="menu-opt">Employees</span></a></li>
+                        <li><a href="editwebpages.html" class=""><i class="bi bi-credit-card-2-front-fill"></i><span class="menu-opt">Edit Web Pages</span></a></li>
+                        <li><a href="editprofile.html" class=""><i class="bi bi-pencil-square"></i><span class="menu-opt">Edit Profile</span></a></li>
+                        <li><a href="settings.html" class=""><i class="bi bi-gear-fill"></i><span class="menu-opt">Settings</span></a></li> 
+                      </ul>
+                    </div>
+                </div>
+                <div class="toggle-btn"></div>
+            </section>
+            <footer class="nav-footer position-absolute" style="top: auto; bottom: 0;
+            right: 0; left: 0;">
+                    <ul>
+                        <li><a href="#" class=""><i class="bi bi-box-arrow-right"></i><span class="menu-opt">Logout</span></a></li>
+                    </ul>
+            </footer>
+        </div>
+        <div class="right-content bg-white p-2 py-4 position-relative pl-3" id="right-content">
+            <a class=" toggle-button btn position-absolute" type="button" onclick="toggle()" ><i class="bi bi-list h2"></i></a>
+
+
+            <section class="employee-li-pg">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12">
+                          <table class="table table-responsive-xl table-responsive-lg table-responsive-md table-responsive-sm">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Profile</th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Details</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                      <div class="image overflow-hidden border-rounded" style="width: 50px; height: 50px;">
+                                          <img src="./resources/images/doctors-curtoon.png" alt="" class="img-fluid">
+                                      </div>
+                                  </th>
+                                  <td>Mark</td>
+                                  <td><span class="edit-button">Edit Profile</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                      <div class="image overflow-hidden border-rounded" style="width: 50px; height: 50px;">
+                                          <img src="./resources/images/doctors-curtoon.png" alt="" class="img-fluid">
+                                      </div>
+                                  </th>
+                                  <td>Mark</td>
+                                  <td><span class="edit-button">Edit Profile</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                      <div class="image overflow-hidden border-rounded" style="width: 50px; height: 50px;">
+                                          <img src="./resources/images/doctors-curtoon.png" alt="" class="img-fluid">
+                                      </div>
+                                  </th>
+                                  <td>Mark</td>
+                                  <td><span class="edit-button">Edit Profile</span></td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+            </section>
+
+            <footer class="py-2 position-absolute px-2 d-flex justify-content-between" style="background-color: #41414B; top: auto; bottom: 0;
+            right: 0; left: 0; color: white;">
+              <span class="text-muted">Developed by DRMcoders</span>
+              <span class="version text-muted">version 8.0.1</span>
+            </footer>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+  </body>
+</html>
